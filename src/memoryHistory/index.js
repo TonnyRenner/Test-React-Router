@@ -1,24 +1,27 @@
 import React, { PureComponent } from 'react';
 import {
-  // HashRouter as Router,
-  // MemoryRouter as Router,
-  BrowserRouter as Router,
+  MemoryRouter,
+  Switch,
   Route
 } from 'react-router-dom';
 
 import App from './App';
-import Repos from '../repos';
 import About from '../about';
+import Repos from '../repos';
 
 
 class History extends PureComponent {
+
   render() {
     return (
-      <Router>
-        <Route path="/" component={App} />
-        <Route path="/about/:id" component={About} />
+      <MemoryRouter
+        initialIndex={1}
+        initialEntries={['/about', { pathname: '/repos' }]}
+      >
+        <Route path="/about" component={About} />
         <Route path="/repos" component={Repos} />
-      </Router>
+        <Route path="/" component={App} />
+      </MemoryRouter>
     );
   }
 }

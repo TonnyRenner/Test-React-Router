@@ -9,4 +9,4 @@ class Repos extends PureComponent {
   }
 }
 
-export default Repos; 
+export default Repos;
