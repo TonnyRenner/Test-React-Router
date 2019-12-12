@@ -1,0 +1,9 @@
+a,
+a:hover,
+a:active {
+  color: inherit;
+}
+
+.active {
+  color: red;
+}

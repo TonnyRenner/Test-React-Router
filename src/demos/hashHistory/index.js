@@ -6,8 +6,8 @@ import {
 } from 'react-router-dom';
 
 import App from './App';
-import About from '../about';
-import Repos from '../repos';
+import About from '../../comps/about';
+import Repos from '../../comps/repos';
 
 
 class History extends PureComponent {
