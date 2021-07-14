@@ -14,9 +14,10 @@ class PromptComp extends PureComponent {
             // 只有在跳转至 about 页面前提示
             const showConfirm = location.pathname.startsWith('/about');
             return showConfirm ? `你确定要跳转到${location.pathname}吗？` : true;
+            // return '确认跳转？'
           }}
           // when={true}: 显示提示 when={false}: 阻止提示
-          when={true}
+          // when={true}
         />
       </div>
     );

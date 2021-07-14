@@ -6,16 +6,30 @@ class APP extends PureComponent {
     console.log('APP, this.props.history', this.props.history);
     return (
       <div>
-        <Link to="/repos">跳转至Repos</Link>
+        <Link
+          to={{
+            pathname: "/repos",
+            state: {
+              repos: 1
+            }
+          }}
+        >
+          跳转至Repos
+        </Link>
         <button
           onClick={() => {
             this.props.history.push({
-              pathname: '/about'
+              pathname: '/about',
+              state: {
+                about: 22
+              }
             })
           }}
         >
           跳转至About
         </button>
+
+        <button onClick={() => { this.props.history.goBack(); }}>返回上一页</button>
       </div>
     );
   }

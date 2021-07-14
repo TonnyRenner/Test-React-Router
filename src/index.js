@@ -11,7 +11,9 @@ import Prompt from './demos/prompt';
 import Redirect from './demos/redirect';
 import Route from './demos/route';
 import Switch from './demos/switch';
+// import Location from './demos/location';
 
 // import AnimateDemo from './demos/animatedTramsitions';
+import TransitionGroup from './demos/transitionGroup';
 
-ReactDOM.render(<History />, document.getElementById('root'));
+ReactDOM.render(<HashHistory />, document.getElementById('root'));

@@ -1,9 +1,11 @@
 import React, { PureComponent } from 'react';
 
 class About extends PureComponent {
-  render() {
+  componentDidMount() {
     console.log('About, this.props.history', this.props.history);
-    console.log('About, this.props', this.props);
+  }
+
+  render() {
     return (
       <h2>About</h2>
     );

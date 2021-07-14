@@ -7,6 +7,9 @@ class APP extends PureComponent {
     return (
       <div>
         <button onClick={() => { this.props.history.goBack(); }}>返回上一页</button>
+        <Link to='/repos'>
+          跳转至Repos
+        </Link>
       </div>
     );
   }

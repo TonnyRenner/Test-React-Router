@@ -7,7 +7,7 @@ class APP extends PureComponent {
       <div>
         <Link to="/repos">Link to /repos</Link>
         <br />
-        <Link to="/about">Link to /about</Link>
+        <Link to="/About">Link to /about</Link>
       </div>
     );
   }
